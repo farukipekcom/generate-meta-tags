@@ -1,0 +1,52 @@
+[
+  {
+    "id": "01.",
+    "title": "Meta Tag Generator",
+    "description": "A meta tags code generator is a tool that helps you create and manage the meta tags for your website.",
+    "link": "/meta-tag-generator",
+    "color": "#BED9E1",
+    "colorDark": "#6599A9"
+  },
+  {
+    "id": "02.",
+    "title": "Twitter Card Generator",
+    "description": "A Twitter card meta tag generator is a tool that helps you create the meta tags that are needed for Twitter cards.",
+    "link": "/twitter-card-generator",
+    "color": "#E5D0CF",
+    "colorDark": "#C88683",
+    "pages": [
+      {
+        "id": "01.",
+        "title": "App Card",
+        "description": "A Card with a direct download to a mobile app.",
+        "link": "/twitter-card-generator/app-card",
+        "color": "#E5D0CF",
+        "colorDark": "#C88683"
+      },
+      {
+        "id": "02.",
+        "title": "Player Card",
+        "description": "A Card that can display video/audio/media.",
+        "link": "/twitter-card-generator/player-card",
+        "color": "#E5D0CF",
+        "colorDark": "#C88683"
+      },
+      {
+        "id": "03.",
+        "title": "Summary Card",
+        "description": "Title, description, and thumbnail.",
+        "link": "/twitter-card-generator/summary-card",
+        "color": "#E5D0CF",
+        "colorDark": "#C88683"
+      },
+      {
+        "id": "04.",
+        "title": "Summary With Large Image Card",
+        "description": "With a prominently-featured image.",
+        "link": "/twitter-card-generator/summary-with-large-image-card",
+        "color": "#E5D0CF",
+        "colorDark": "#C88683"
+      }
+    ]
+  }
+]

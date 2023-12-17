@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+} */
+.afterarrow {
+  @apply text-gray dark:text-gray;
+}
+.afterarrow::after {
+  content: ">";
+  margin-left: 8px;
+  @apply text-gray dark:text-gray;
+}
+.afterarrow:nth-last-child(1)::after {
+  content: "";
+}
+.menu-item {
+  @apply flex h-10 w-full items-center rounded-small py-2 pl-3 text-base font-semibold text-white;
+}
+.dropdown-menu-item {
+  @apply ml-3 flex w-full items-center rounded-small py-[6px] pl-2 text-sm font-semibold text-white;
+}
+.menu-item:hover,
+.dropdown-menu-item:hover {
+  @apply bg-secondary text-white transition-colors duration-500 ease-in-out;
+}
+.menu-item-active {
+  @apply flex h-10 w-full items-center rounded-small bg-secondary pl-3 text-base font-semibold text-white;
+}
+.dropdown-menu-item-active {
+  @apply ml-3 flex  w-full items-center rounded-small bg-secondary py-[6px] pl-2 text-sm font-semibold text-white;
+}
+.toggle {
+  @apply fill-primary dark:fill-secondary;
+}
+.gff {
+  @apply flex w-1/2 items-center p-6;
+}
+.pages > a:nth-child(1) > div,
+.pages > a:nth-child(1) > div > svg > g > path {
+  background-color: #b7dae2 !important;
+  stroke: #539bab !important;
+}
+.pages > a:nth-child(2) > div,
+.pages > a:nth-child(2) > div > svg > g > path {
+  background-color: #e5d0cf !important;
+  stroke: #c88683 !important;
+}
+.pages > a:nth-child(3) > div,
+.pages > a:nth-child(3) > div > svg > g > path {
+  background-color: #cfe5d1 !important;
+  stroke: #519056 !important;
+}
+.pages > a:nth-child(4) > div,
+.pages > a:nth-child(4) > div > svg > g > path {
+  background-color: #f3f8d6 !important;
+  stroke: #a6af62 !important;
+}
+.customShadow {
+  box-shadow:
+    0px 2px 4px 0px rgba(0, 0, 0, 0.01),
+    0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.selectWrapper::after {
+  background: url("/down-arrow.svg") no-repeat;
+  bottom: 12px;
+  right: 12px;
+  position: absolute;
+  content: " ";
+  width: 12px;
+  height: 12px;
+}
+.customInput {
+  @apply mt-[6px] h-10 rounded-small border border-solid border-inputBorder bg-white pl-3 outline-none focus:border-primary dark:border-inputDarkBorder dark:bg-dark_input_bg focus:dark:border-white;
+}
+.warningRed {
+  @apply text-red-400;
+}
+.warningYellow {
+  @apply text-yellow-500;
+}
+.warningGreen {
+  @apply text-[#32da34];
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+/* PrismJS 1.29.0
+https://prismjs.com/download.html#themes=prism&languages=markup */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+.hljs {
+  white-space: break-spaces;
+}
+/*
+
+Gradient Dark (c) Samia Ali <samiaab1990@gmail.com>
+
+*/
+pre {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.hljs {
+  display: block !important;
+  overflow-x: unset !important;
+  padding: 0px !important;
+  color: #e7e4eb !important;
+  background-color: transparent !important;
+  font-size: 14px !important;
+  letter-spacing: 0.1px;
+}
+
+.hljs-subtr {
+  color: #e7e4eb !important;
+}
+
+.hljs-doctag,
+.hljs-meta,
+.hljs-comment,
+.hljs-quote {
+  color: #af8dd9 !important;
+}
+
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-regexp,
+.hljs-attr,
+.hljs-tag {
+  color: #aefbff !important;
+}
+
+.hljs-params,
+.hljs-selector-class,
+.hljs-bullet {
+  color: #f19fff !important;
+}
+
+.hljs-keyword,
+.hljs-section,
+.hljs-meta-keyword,
+.hljs-symbol,
+.hljs-type {
+  color: #17fc95 !important;
+}
+
+.hljs-addition,
+.hljs-number,
+.hljs-link {
+  color: #c5fe00 !important;
+}
+
+.hljs-string {
+  color: #38c0ff !important;
+}
+
+.hljs-attribute,
+.hljs-addition {
+  color: #e7ff9f !important;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #e447ff !important;
+}
+
+.hljs-builtin-name,
+.hljs-built_in,
+.hljs-formula,
+.hljs-name,
+.hljs-title,
+.hljs-class,
+.hljs-function {
+  color: #ffc800 !important;
+}
+
+.hljs-selector-pseudo,
+.hljs-deletion,
+.hljs-literal {
+  color: #ff9e44 !important;
+}
+
+.hljs-emphasis,
+.hljs-quote {
+  font-style: italic !important;
+}
+
+.hljs-params,
+.hljs-selector-class,
+.hljs-strong,
+.hljs-selector-tag,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-section,
+.hljs-keyword {
+  font-weight: bold !important;
+}
+.hljs-tag {
+  white-space: normal;
+}
+/* -------------------------------------------------------------------------------------------- */
